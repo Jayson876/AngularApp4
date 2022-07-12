@@ -1,0 +1,9 @@
+<h3>Top 4 NetFlix Movies</h3>
+
+<div>
+    <a *ngFor="let movie of movies" class="columns-1-4" routerLink="/detail/{{movie.id}}">
+        <div class="moviecard">
+            <h4>{{movie.name}}</h4>
+        </div>
+    </a>
+</div>

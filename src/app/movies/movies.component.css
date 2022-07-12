@@ -1,0 +1,29 @@
+.movies{
+    background-color: #3377ff;
+    padding: 0.5em 1em 0.5em 1.5em;
+    margin: 1em;
+    max-width: 16em;
+}
+
+.movielist {
+    background-color: #A7C7E7;
+    font-size: 0.875em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    padding: 0.3em;
+    margin: 0.2em;
+}
+
+.selected {
+    background-color:purple;
+    color: white;  
+}
+
+.parent{
+    display: flex;
+}
+
+li {
+    cursor: pointer;
+}
+

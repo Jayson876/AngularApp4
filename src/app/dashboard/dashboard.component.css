@@ -1,0 +1,35 @@
+.moviecard {
+    padding: 1.25em;
+    text-align: center;
+    color: white;
+    background: #4499ff;
+    min-width: 7.5em;
+    max-height: 7.5em;
+    border-radius: 1.25em;
+    box-shadow: 0.312em 0.312em #888888;
+}
+
+.moviecard :hover {
+    cursor: pointer;
+}
+
+.moviecard, a {
+    text-decoration: none;
+}
+
+.columns-1-4 {
+    float: left;
+    width: 25%;
+    padding-bottom: 1.25em;
+    padding-right: 1.25em;
+}
+
+[class*='columns-'] :last-of-type{
+    padding: 0;   
+}
+
+*, *:after,*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
