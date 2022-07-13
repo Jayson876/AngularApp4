@@ -81,16 +81,17 @@ main {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  transition: all .75s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
-.movies-list.active a{
-  letter-spacing: .5ch;
-  color: #FFC300;
-}
 
 .movies-list a span {
   font-size: 18px;
+}
+
+.movies-list a:hover {
+  letter-spacing: .5ch;
+  color: #FFC300;
 }
 
 

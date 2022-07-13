@@ -29,3 +29,7 @@ nav a {
 nav a:hover {
   color: #FFC300;
 }
+
+nav a.active {
+  color: #FFC300;
+}
