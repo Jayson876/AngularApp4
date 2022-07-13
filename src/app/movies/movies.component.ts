@@ -42,6 +42,34 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getMoviesfromService();
-  }
 
+    var counter = 0;
+    document.addEventListener('keyup', function(e){
+      switch (e.key){
+        case 'ArrowUp':
+          counter -= 36;
+          document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+          break;
+        case 'ArrowDown':
+          counter += 36;
+          document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+          break;
+      }
+    });
+
+        window.addEventListener('wheel', function(event)
+    {
+    if (event.deltaY < 0)
+    {
+      counter -= 36;
+      document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+    }
+    else if (event.deltaY > 0)
+    {
+      counter += 36;
+      document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+    }
+    });
+
+  }
 }

@@ -1,10 +1,13 @@
-
-<div *ngIf="movie" class="details">
-    <h3>Selected Movie :</h3> <input [(ngModel)]="movie.name"> 
-    <h3>Movie Description : {{movie.description}}</h3> 
-    <h3>Release Year : {{movie.releaseYear}}</h3> 
-    <img src="{{movie.image}}" alt="" srcset="">
-    <button (click)="goBack()">
-        Go Back
-    </button>
+<div class="wrapper">
+  <div *ngIf="movie" class="details">
+      <img src="{{movie.image}}" alt="" srcset="">
+      <div class="desc">
+        <span class="movie-title">{{movie.name}}</span>
+        <span class="movie-date">{{movie.releaseYear}}</span>
+        <p>{{movie.description}}</p>
+      </div>
+      <button (click)="goBack()">
+          Go Back
+      </button>
+  </div>
 </div>

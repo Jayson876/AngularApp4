@@ -66,7 +66,7 @@ export var fakeMovies: Movie[]=[
     {
         id: 10,
         name: "Eli",
-        description: "https://m.media-amazon.com/images/M/MV5BMzA5MjNjODEtOWYxYi00OTdmLTlhNTAtN2VhMTMxNWJjM2ZmXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg",
+        description: "A boy becomes trapped in a haunted house while undergoing treatment for a rare disease.",
         releaseYear: 2019,
         image: "https://m.media-amazon.com/images/M/MV5BYWQwYjNiM2ItMTcyZS00ZTNmLTgwNzQtMTgwNzU5ODgxMTc3XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_.jpg"
     },
