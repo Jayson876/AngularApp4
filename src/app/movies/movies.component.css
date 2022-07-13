@@ -32,7 +32,7 @@ li {
 
 main {
   width: 100%;
-  height: calc(100vh - 170px);
+  height: calc(100vh - 160px);
   display: flex;
   justify-content: center;
   align-items: center;
