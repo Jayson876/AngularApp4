@@ -42,34 +42,50 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getMoviesfromService();
+    // var iteration = (360 / this.movies.length);
+    // var iterArray = []
+    // var newiteration = 0;
 
-    var counter = 0;
-    document.addEventListener('keyup', function(e){
-      switch (e.key){
-        case 'ArrowUp':
-          counter -= 36;
-          document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
-          break;
-        case 'ArrowDown':
-          counter += 36;
-          document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
-          break;
-      }
-    });
+    // for(var i = 0; i < this.movies.length; i++ ){
 
-        window.addEventListener('wheel', function(event)
-    {
-    if (event.deltaY < 0)
-    {
-      counter -= 36;
-      document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
-    }
-    else if (event.deltaY > 0)
-    {
-      counter += 36;
-      document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
-    }
-    });
+    //     iterArray.push(newiteration);
+    //     newiteration = newiteration + iteration;
+    // }
+    // console.log(iterArray)
+    //
+    // for(var n = 0; n < document.querySelectorAll('.movies-list').length; n++ ){
+    //   var z = 1;
+    //   document.querySelector(`.movies-list[_ngcontent-tnl-c17]:nth-child(${z})`)?.setAttribute('style', `transform: rotateX(${iterArray[n]}deg) translateZ(210px);`);
+    //   z++;
+    // }
+
+    // var counter = 0;
+    // document.addEventListener('keyup', function(e){
+    //   switch (e.key){
+    //     case 'ArrowUp':
+    //       counter -= 36;
+    //       document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+    //       break;
+    //     case 'ArrowDown':
+    //       counter += 36;
+    //       document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+    //       break;
+    //   }
+    // });
+
+    //     window.addEventListener('wheel', function(event)
+    // {
+    // if (event.deltaY < 0)
+    // {
+    //   counter -= 36;
+    //   document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+    // }
+    // else if (event.deltaY > 0)
+    // {
+    //   counter += 36;
+    //   document.querySelector('.movies-section')?.setAttribute('style', `transform: perspective(2000px) rotateX(${counter}deg);`);
+    // }
+    // });
 
   }
 }

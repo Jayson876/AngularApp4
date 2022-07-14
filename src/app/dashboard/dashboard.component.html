@@ -1,20 +1,17 @@
-
 <main>
   <div class="container">
     <h3 class="heading">Top 4 NetFlix Movies</h3>
     <div class="card-list">
       <div class="movie-card-container" *ngFor="let movie of movies">
-        <a routerLink="/detail/{{movie.id}}">
+        <a routerLink="/detail/{{ movie.id }}">
           <div class="movie-card">
-            <img class="movie-image" src="{{movie.image}}" alt="">
+            <img class="movie-image" src="{{ movie.image }}" alt="" />
             <div class="card-desc">
-              <span>{{movie.name}}</span>
+              <span>{{ movie.name }}</span>
             </div>
           </div>
         </a>
       </div>
     </div>
-
   </div>
 </main>
-
