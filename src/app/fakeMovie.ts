@@ -19,7 +19,7 @@ export var fakeMovies: Movie[]=[
         name: "The Man from Toronto",
         description: "The plot follows a New York City screw-up named Teddy who is mistaken for the 'Man from Toronto' when the two wind up in the same Airbnb. Antics ensue.",
         releaseYear: 2022,
-        image: "https://m.media-amazon.com/images/M/MV5BODkyYTRlMDItMDlhMC00MzkzLWI3NzQtOGVlMjdjYThlNDM3XkEyXkFqcGdeQXVyMTA1OTcyNDQ4._V1_FMjpg_UX1000_.jpg"
+        image: "https://blockflix.b-cdn.net/storage/2022/07/the-man-from-toronto.jpg"
     },
     {
         id: 4,
